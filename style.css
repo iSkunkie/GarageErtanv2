@@ -1,0 +1,314 @@
+* {
+    font-family: 'Poppins', sans-serif; /* font kan worden aangepast */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* hier start de navigatiebalk */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    background-color: #3c3c3c;
+    width: 100vw;
+}
+
+.logo {
+    cursor: pointer;
+    width: 65px;
+    height: 65px;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+.navbar-links {
+    list-style: none;
+}
+
+.navbar-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-links li a:hover {
+    color: #262626;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #22d300 ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #48a115;
+}
+/* hier stopt de navigatiebalk */
+
+/* hier start de footer */
+footer{
+    position: relative;
+    top: 700px;
+    background: #262626;
+    height: auto;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 25px;
+    line-height: 3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    background: #262626;
+    padding: 15px 0;
+    width: 100vw;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social li{
+    margin: 0 10px;
+}
+
+.social a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.social a:hover i{
+    color: #262626;
+}
+/* hier stopt de footer */
+
+/* hier start de main van gar-home.php*/
+.container {
+    min-height: 100%;
+}
+
+.welkom {
+    background: url("fotos/auto1.jpg");
+    height: 700px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.welkom-text {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    margin: 20% 32%;
+    text-align: center;
+}
+
+.welkom-text h2{
+    background-color: #3c3c3c;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.welkom-text a{
+    background-color: #3c3c3c;
+    border: 1px solid white;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.welkom-text a:hover{
+    cursor: pointer;
+    background-color: #262626;
+}
+/* hier stopt de main */
+
+/* hier start de main van gar-overons.php */
+.overons {
+    background: url("fotos/garage.jpg");
+    height: 700px;
+    width: 100vw;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overons-text {
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    margin: 5% 33%;
+    text-align: center;
+}
+
+.overons-text a{
+    background-color: #3c3c3c;
+    border: 1px solid white;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.overons-text a:hover{
+    cursor: pointer;
+    background-color: #262626;
+}
+
+.klus {
+    width: 300px;
+    height: 200px;
+}
+
+.klus:hover {
+    cursor: pointer;
+}
+/* hier stopt de main van gar-overons.php */
+
+/* hier start de main van gar-services.php */
+
+.service {
+    background: url("fotos/car.jpg");
+    height: 700px;
+    width: 100vw;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.service-text {
+    font-weight: 500;
+    font-size: 20px;
+    color: White;
+    position: absolute;
+    height: 300px;
+    margin: 5% 40%;
+    text-align: center;
+}
+/* hier stopt de main van gar-services.php */
+
+/* hier start de main van gar-contact.php */
+.contact-veld {
+    background: url("fotos/auto2.jpg") no-repeat center;
+    padding: 40px 0;
+    height: 800px;
+    width: 100vw;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.contact-veld h2 {
+    margin: 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    color: white;
+}
+
+.contact-formtext {
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    margin: 16px 0;
+    border: 0;
+    background: #3c3c3c;
+    padding: 20px 40px;
+}
+
+.contact-formbtn {
+    float: right;
+    padding: 9px 25px;
+    background-color: #22d300 ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-formbtn:hover {
+    background-color: #48a115;
+}
+
+textarea {
+    height: 120px;
+}
+
+input {
+    color: white;
+}
+/* hier stopt de main van gar-contact.php */
+
+/* styling van formulieren */
